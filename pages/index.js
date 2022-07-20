@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          DEVOPS CRASH COURSE!
+          !DEVOPS CRASH COURSE!
         </h1>
 
         <div className={styles.grid}>
