@@ -5,7 +5,7 @@ pipeline {
     stage("Build docker image") {
       steps {
         script {
-          docker build --build-arg -t dcc-cicd:latest .
+          docker build -t "dcc-cicd:latest" .
         }
       }
     }
@@ -13,7 +13,7 @@ pipeline {
     stage("Push to dockerhub") {
       steps {
         script {
-          docker push malcak/dcc-cicd:latest
+          docker push "malcak/dcc-cicd:latest"
         }
       }
     }
