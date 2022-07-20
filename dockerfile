@@ -19,8 +19,6 @@ FROM node:16-alpine AS runner
 WORKDIR /app
 
 LABEL maintainer = "malcakx@gmail.com"
-ARG BUILD_DATE
-LABEL org.label-schema.build-date = $BUILD_DATE
 
 ENV NODE_ENV production
 

@@ -5,7 +5,7 @@ pipeline {
     stage("Build docker image") {
       steps {
         script {
-          docker build --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t dcc-cicd:latest .
+          docker build --build-arg -t dcc-cicd:latest .
         }
       }
     }
